@@ -1,0 +1,74 @@
+Git basics refresher training
+
+
+Initialising an empty local repository:
+
+git init
+
+
+Setting up git identity (use --global flag for everything, exclude it for only just that specific repo):
+
+git config --global user.name "first_name last_name"
+
+or 
+
+git config --global user.name "username"
+
+AND
+
+git config --global user.email name@example.com
+
+
+Check that git details/settings are set up properly:
+
+git config --list
+
+
+Add files that you would like to track changes for:
+
+git add <file>
+
+OR
+
+git add .
+(for adding everything)
+
+
+E.g. git add README.md
+
+
+Commit to the add/delete of files and changes in files and write a message for what you are committing:
+
+git commit -m "Example Message"
+
+
+Connect local repository to a remote repository(new or existing):
+
+git remote add origin https://github.com/<username>/<repository_name>.git
+
+
+Push all changes from local to remote repository:
+
+git push
+
+OR
+
+git push -u origin master
+(to push changes to remote/origin master)
+
+
+If you would like to pull any new changes in the remote back to local:
+
+git pull
+
+
+If you would like to just track/check for any changes in the remote compared to the local copy:
+
+git fetch
+
+or
+
+git fetch --all
+
+
+
